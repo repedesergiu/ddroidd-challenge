@@ -7,6 +7,10 @@ import SearchIcon from "@mui/icons-material/Search";
 import Typography from "@mui/material/Typography";
 import clsx from "clsx";
 
+const home = 0;
+const about = 1;
+const contact = 2;
+
 const useStyles = makeStyles((theme) => ({
   appbar: {
     background: theme.palette.background,
@@ -56,11 +60,14 @@ export default function AppBarComponent() {
   const [selected, setSelected] = useState(0);
 
   useEffect(() => {
-    if (window.location.pathname === "/" && selected !== 0) {
+    if (window.location.pathname === "/" && selected !== home) {
       setSelected(0);
-    } else if (window.location.pathname === "/about" && selected !== 1) {
+    } else if (window.location.pathname === "/about" && selected !== about) {
       setSelected(1);
-    } else if (window.location.pathname === "/contact" && selected !== 2) {
+    } else if (
+      window.location.pathname === "/contact" &&
+      selected !== contact
+    ) {
       setSelected(2);
     }
   }, [selected]);
@@ -90,7 +97,7 @@ export default function AppBarComponent() {
               color="secondary"
               to="/"
               className={
-                selected === 0
+                selected === home
                   ? clsx(classes.link, classes.selected)
                   : classes.link
               }
@@ -104,7 +111,7 @@ export default function AppBarComponent() {
               color="secondary"
               to="/about"
               className={
-                selected === 1
+                selected === about
                   ? clsx(classes.link, classes.selected)
                   : classes.link
               }
@@ -118,7 +125,7 @@ export default function AppBarComponent() {
               color="secondary"
               to="/contact"
               className={
-                selected === 2
+                selected === contact
                   ? clsx(classes.link, classes.selected)
                   : classes.link
               }
