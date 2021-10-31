@@ -5,7 +5,7 @@ import Product from "./Product";
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "grid",
-    gridTemplateColumns: "repeat(auto-fit,minmax(240px,0.25fr))",
+    gridTemplateColumns: "repeat(auto-fit,minmax(250px,0.25fr))",
     columnGap: theme.spacing(4),
     rowGap: theme.spacing(6),
   },

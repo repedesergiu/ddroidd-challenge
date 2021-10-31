@@ -15,19 +15,19 @@ const useStyles = makeStyles((theme) => ({
   title: {
     color: theme.palette.text.main,
     padding: theme.spacing(2),
-    width: 230,
+    width: 220,
     justifyContent: "center",
   },
   description: {
     color: theme.palette.text.light,
     padding: theme.spacing(2),
-    width: 200,
+    width: 220,
     justifyContent: "center",
     textAlign: "justify",
   },
   image: {
     maxHeight: 150,
-    maxWidth: 150,
+    maxWidth: 200,
   },
 }));
 
