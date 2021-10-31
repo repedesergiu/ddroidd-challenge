@@ -10,6 +10,7 @@ const useStyles = makeStyles((theme) => ({
     display: "grid",
     padding: `100px ${theme.spacing(6)}`,
     minHeight: 600,
+    background: theme.palette.primary.main,
   },
   content: {
     display: "grid",

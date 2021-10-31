@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
     justifyItems: "center",
     padding: `0px ${theme.spacing(6)}`,
     minHeight: 600,
+    background: theme.palette.primary.main,
   },
   icon: {
     border: `3px solid ${theme.palette.secondary.main}`,

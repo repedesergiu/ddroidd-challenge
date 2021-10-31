@@ -9,17 +9,21 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyItems: "center",
     cursor: "pointer",
+    background: theme.palette.white,
+    boxShadow: "1px -1px 21px -6px rgba(0,0,0,0.14)",
   },
   title: {
     color: theme.palette.text.main,
     padding: theme.spacing(2),
-    width: 250,
+    width: 230,
     justifyContent: "center",
   },
   description: {
     color: theme.palette.text.light,
-    paddingLeft: theme.spacing(2),
+    padding: theme.spacing(2),
+    width: 200,
     justifyContent: "center",
+    textAlign: "justify",
   },
   image: {
     maxHeight: 150,
