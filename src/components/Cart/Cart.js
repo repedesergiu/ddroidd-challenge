@@ -80,8 +80,8 @@ export default function Cart(props) {
           className={classes.white}
           fontWeight="600"
         >
-          Cart {""}
-          {props.itemsNumber}
+          Cart
+          {props.itemsNumber ? ` ( ${props.itemsNumber} ) ` : null}
         </Typography>
       </div>
       <div className={classes.cartContainer}>
