@@ -80,7 +80,7 @@ export default function Cart(props) {
           className={classes.white}
           fontWeight="600"
         >
-          dadada Cart
+          Cart
           {props.itemsNumber ? ` ( ${props.itemsNumber} ) ` : null}
         </Typography>
       </div>
